@@ -46,7 +46,7 @@
 </style>
 </head>
 <body>
-    <audio id="bg-music" loop>
+    <audio id="bg-music" autoplay>
         <source src="bg-music.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
@@ -65,16 +65,16 @@
         audio.play();
     }
     $(document).ready(function() {
-        setTimeout(playMusic,3000);
+        setTimeout(playMusic, 3000);
         var options = {
             webgl: true,
             webglShadow: true,
-            autoPlayStart: true,
+            autoPlayStart: false,
             height: 2000,
             backgroundColor: "#000000",
             autoPlay: true,
             hardPages: true,  
-            autoPlayDuration: 5000,
+            autoPlayDuration: 10000,
             showControls: false,
             toggleFullscreen: true,
             text: {
